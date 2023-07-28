@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escalação do time</title>
+    <script src="./treinando.js"></script>
+  </head>
+  <body>
+    <h1>Escalação do time</h1>
+    <hr />
+    <h3>Escalar Jogador</h3>
+    <p>
+
+      <label for="name">Nome: </label>
+      <input type="text" name="name" id="name" required />
+      <label for="position">Posição:</label>
+      <input type="text" name="position" id="position" required/>
+      <label for="camisa">Camisa:</label>
+      <input type="number" name="camisa" id="camisa" required/>
+      <button onclick="addPlayer()">Escalar</button>
+    </p>
+
+    <p>
+    <h3>Remover Jogador</h3>
+    <label for="numberToRemove">Número:</label>
+    <input type="text" name="numberToRemove" id="numberToRemove" />
+    <button onclick="removePlayer()">Remover Jogador</button>
+    </p>
+
+    <h3>Time</h3>
+    <ul id="teamList">
+
+    </ul>
+  </body>
+</html>
